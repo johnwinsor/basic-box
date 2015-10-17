@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # install ruby developer packages
-apt-get -y install make build-essential libssl-dev libreadline6-dev zlib1g-dev libyaml-dev libsqlite3-dev libssl-dev libc6-dev libpq-dev libcurl4-openssl-dev libksba8 libksba-dev libqtwebkit-dev
+sudo apt-get -y install make build-essential libssl-dev libreadline6-dev zlib1g-dev libyaml-dev libsqlite3-dev libssl-dev libc6-dev libpq-dev libcurl4-openssl-dev libksba8 libksba-dev libqtwebkit-dev
 # nokogiri requirements
-apt-get -y install libxslt-dev libxml2-dev
+sudo apt-get -y install libxslt-dev libxml2-dev
 
 # install rbenv and ruby-build
 git clone git://github.com/sstephenson/rbenv.git /home/vagrant/.rbenv
