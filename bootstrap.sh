@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-sudo apt-get -y update
-sudo apt-get -y install zsh git-core
+sudo apt-get -y update > /dev/null
+sudo apt-get -y install zsh git-core > /dev/null
 
 
 git clone --recursive https://github.com/johnwinsor/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
