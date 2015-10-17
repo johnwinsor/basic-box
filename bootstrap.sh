@@ -3,6 +3,7 @@
 sudo apt-get -y update
 sudo apt-get -y install zsh git-core
 
+
 git clone --recursive https://github.com/johnwinsor/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 shopt -s extglob
@@ -15,4 +16,5 @@ git config --global color.ui true
 git config --global user.name "John Winsor"
 git config --global user.email "johnwinsor@gmail.com"
 
+# Change shell
 sudo usermod -s /bin/zsh "$(whoami)"
