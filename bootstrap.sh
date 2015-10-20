@@ -18,3 +18,5 @@ git config --global user.email "johnwinsor@gmail.com"
 
 # Change shell
 sudo usermod -s /bin/zsh "$(whoami)"
+
+cp /vagrant/.tmux.conf /home/vagrant/
