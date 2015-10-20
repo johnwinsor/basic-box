@@ -2,6 +2,10 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 2048
+    end
+
     config.vm.box = "ubuntu/trusty64"
 
     ### Solr/Fedora Port
@@ -13,5 +17,6 @@ Vagrant.configure(2) do |config|
 
     config.vm.provision :shell, privileged: false, path: "bootstrap.sh"
     config.vm.provision :shell, privileged: false, path: "ruby.sh"
+    config.vm.provision :shell, privileged: false, path: "postgres.sh"
 
 end
