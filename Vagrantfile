@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
     ### http Port
     config.vm.network "forwarded_port", guest: 80, host: 8080
 
-    config.vm.synced_folder "/Users/jwinsor/Dropbox/Mills/webstuff/julia", "/home/vagrant/julia"
+    #config.vm.synced_folder "/Users/jwinsor/Dropbox/Mills/webstuff/julia", "/home/vagrant/julia"
 
     config.vm.provision :shell, privileged: false, path: "bootstrap.sh"
     config.vm.provision :shell, privileged: false, path: "ruby.sh"
