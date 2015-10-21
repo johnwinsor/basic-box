@@ -19,6 +19,5 @@ Vagrant.configure(2) do |config|
 
     config.vm.provision :shell, privileged: false, path: "bootstrap.sh"
     config.vm.provision :shell, privileged: false, path: "ruby.sh"
-    config.vm.provision :shell, privileged: false, path: "postgres.sh"
-
+    config.vm.provision :shell, privileged: false, path: "sufia.sh"
 end
